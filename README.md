@@ -8,9 +8,9 @@ This is a [TextMate][tm] Bundle to work with [CriticMarkup][cm].  It supports sy
 
 [![CriticMarkup][cmimg]][cm]
 
-  [cmimg]: http://www.macdrifter.com/uploads/2013/02/CriticMarkup-400px.png
+  [cmimg]: http://high90.com/img/CriticMarkup-400px.png
   
-CriticMarkup was created by [Gabe Weatherhead][md] and [Eric Hess][mfb].
+[CriticMarkup][cm] was created by [Gabe Weatherhead][md] and [Eric Hess][mfb].
 
   [cm]: http://criticmarkup.com
   [md]: http://www.macdrifter.com
