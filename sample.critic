@@ -1,9 +1,12 @@
-# Header
+# Expecting Markdown bundle compatibility
 
-*Should be bold soon* but still isn't.  _Markdown_ isn't okay for now :)
+**Should be bold soon** but still isn't.  Using _Markdown_ in `.critic` files and mixing syntax highlighting doesn't work for now.
 
-Example Text:
+# Example Text
 
-> Don't go around saying{-- to people that--} the world owes you a living. The world owes you nothing. It was here first. {~~One~>Only one~~} thing is impossible for God: To find {++any++} sense in any copyright law on the planet. {{Truth is stranger than fiction}}{>>true<<}, but it is because Fiction is obliged to stick to possibilities; Truth isn’t.
+But of course CriticMarkup works:
 
-- Christian
+> Don't go around saying{-- to people that--} the world owes you a living. The  world owes you nothing. It was here first. {~~One~>Only one~~} thing is impossible for God: To find {++any++} sense in any copyright law on the planet. {{Truth is stranger than fiction}}{>>true<<}, but it is because Fiction is obliged to stick to possibilities; Truth isn’t.
+
+---Christian
+(2013-02-15)

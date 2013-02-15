@@ -4,7 +4,7 @@ This is a [TextMate][tm] Bundle to work with [CriticMarkup][cm].  It supports sy
 
 [`sample.critic`](http://github.com/DivineDominion/criticmarkup.tmbundle/blob/master/sample.critic):
 
-![Sample](http://github.com/DivineDominion/criticmarkup.tmbundle/raw/master/sample.png)
+<img src="http://github.com/DivineDominion/criticmarkup.tmbundle/raw/master/sample.png" width="609" height="325" />
 
   [tm]: https://github.com/textmate/textmate "textmate on GitHub"
   
