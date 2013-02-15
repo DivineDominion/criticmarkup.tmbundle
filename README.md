@@ -2,6 +2,10 @@
 
 This is a [TextMate][tm] Bundle to work with [CriticMarkup][cm].  It supports syntax highlighting and the basic commands to work with plain text editorial annotations.
 
+[`sample.critic`](http://github.com/DivineDominion/criticmarkup.tmbundle/blob/master/sample.critic):
+
+![Sample](http://github.com/DivineDominion/criticmarkup.tmbundle/raw/master/sample.png)
+
   [tm]: https://github.com/textmate/textmate "textmate on GitHub"
   
 # The CriticMarkup syntax
