@@ -28,7 +28,7 @@ end
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>@D</string>
+	<string>@</string>
 	<key>name</key>
 	<string>Delete</string>
 	<key>outputCaret</key>

@@ -28,7 +28,7 @@ end
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>@?</string>
+	<string>@C</string>
 	<key>name</key>
 	<string>Comment</string>
 	<key>outputCaret</key>
