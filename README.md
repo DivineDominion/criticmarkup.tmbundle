@@ -8,23 +8,11 @@ Many thanks go to Hilton Lipschitz who contributed to this bundle, adding very c
   
 ## Keyboard Shortcuts
 
-<ul>
-  <li>
-      Addition <span style="color:#00bb00;"><code>{++ ++}</code></span> (⇧⌘A)
-  </li>
-  <li>
-      Deletion <span style="color: #dd0000;"><code>{-- --}</code></span> (⌘⌫)
-  </li>
-  <li>
-      Substitution <span style="color: #ff8600;"><code>{~~ ~&gt; ~~}</code></span> (⇧⌘S)
-  </li>
-  <li>
-      Comment <span style="color: #0000bb;"><code>{&gt;&gt; &lt;&lt;}</code></span> (⇧⌘C)
-  </li>
-  <li>
-      Highlight <code><span style="color: #aa53a9;">{== ==}</span><span style="color: #0000bb;">{&gt;&gt; &lt;&lt;}</span></code> (⇧⌘H)
-  </li>
-</ul>
+*   Addition `{++ ++}` (⇧⌘A)
+*   Deletion `{-- --}` (⌘⌫)
+*   Substitution `{~~ ~> ~~}` (⇧⌘S)
+*   Comment `{>> <<}` (⇧⌘C)
+*   Highlight `{== ==}{>> <<}` (⇧⌘H)
 
 ## Sample file
 
