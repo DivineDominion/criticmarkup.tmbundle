@@ -26,7 +26,7 @@ To install:
 
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles
     cd ~/Library/Application\ Support/TextMate/Bundles
-    git clone git://github.com/hiltmon/Critic-Markup.tmbundle "Critic-Markup.tmBundle"
+    git clone git://github.com/DivineDominion/criticmarkup.tmbundle "CriticMarkup.tmBundle"
     osascript -e 'tell app "TextMate" to reload bundles'
 
 
