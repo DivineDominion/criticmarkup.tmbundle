@@ -12,7 +12,7 @@ require 'optparse'
 
 class AcceptCritic
   
-  VERSION = '0.0.1'
+  VERSION = '0.1.0'
   AUTHOR = 'Hilton Lipschitz'
   TWITTER = '@hiltmon'
   HOME_URL = 'http://www.hiltmon.com'
@@ -20,23 +20,32 @@ class AcceptCritic
   
   attr_reader :options
   
-  def run(file_path, accept = true)
-    data = IO.read(file_path)
-    # puts @data
-    if accept
+  def accept_all(file_path)
+    self.file_data(file_path) do |data|
       data.gsub!(/\{\+\+(.*)\+\+\}/, "\\1") # Add all
       data.gsub!(/\{\-\-(.*)\-\-\}/, '') # Delete all
       data.gsub!(/\{\~\~(.*)~>(.*)\~\~\}/, "\\2") # Accept substitutions
-    else
+    end
+  end
+  
+  def reject_all(file_path)
+    self.file_data(file_path) do |data|
       data.gsub!(/\{\+\+(.*)\+\+\}/, '') # No Adds
       data.gsub!(/\{\-\-(.*)\-\-\}/, "\\1") # Undo Deletes
       data.gsub!(/\{\~\~(.*)~>(.*)\~\~\}/, "\\1") # Reject substitutions
     end
+  end
+  
+  protected
+  
+  def file_data(file_path)
+    data = IO.read(file_path)
+
+    yield data
+    
     data.gsub!(/\{\=\=(.*)\=\=\}/, "\\1") # Unhighlight
     data.gsub!(/\{\>\>(.*)\<\<\}/, '') # Lose comments
     
     puts data
   end
-  
-  
 end

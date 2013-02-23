@@ -9,9 +9,9 @@
 	<key>command</key>
 	<string>#!/usr/bin/env ruby -wKU
 
-require "#{ENV["TM_BUNDLE_SUPPORT"]}/bin/acceptCritic"
+require "#{ENV["TM_BUNDLE_SUPPORT"]}/bin/accept_critic"
 
-AcceptCritic.new().run(ENV['TM_FILEPATH'], true)
+AcceptCritic.new().accept_all(ENV['TM_FILEPATH'])
 </string>
 	<key>input</key>
 	<string>document</string>
