@@ -11,7 +11,7 @@ Many thanks go to Hilton Lipschitz who contributed to this bundle, adding very c
 *   Addition `{++ ++}` (⇧⌘A)
 *   Deletion `{-- --}` (⌘⌫)
 *   Substitution `{~~ ~> ~~}` (⇧⌘S)
-*   Comment `{>> <<}` (⇧⌘C)
+*   Comment `{>> <<}` (⌘/)
 *   Highlight `{== ==}{>> <<}` (⇧⌘H)
 
 ## Sample file
