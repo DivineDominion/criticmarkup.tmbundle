@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoScrollOutput</key>
+	<true/>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+require "#{ENV["TM_BUNDLE_SUPPORT"]}/bin/acceptCritic"
+
+AcceptCritic.new().run(ENV['TM_FILEPATH'], true)
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^~@a</string>
+	<key>name</key>
+	<string>Accept All</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceDocument</string>
+	<key>scope</key>
+	<string>text.html.markdown -meta.disable-markdown</string>
+	<key>uuid</key>
+	<string>8BC1FE1B-73CC-4E60-BDA2-F1DAA77F94DE</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

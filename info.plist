@@ -11,6 +11,20 @@
 </string>
 	<key>name</key>
 	<string>CriticMarkup</string>
+	<key>mainMenu</key>
+	<dict>
+    <key>items</key>
+		<array>
+			<string>96A678EC-1587-41FB-B63B-8361FD437E2A</string>
+			<string>39E312C8-D746-41C5-8C23-F182B38CD060</string>
+			<string>70BB8312-D48C-4616-B914-C88E9535338E</string>
+			<string>50AE2294-02C1-4040-81D4-722DC0111905</string>
+			<string>3201904C-15EB-42D3-AEA6-DB65E6181025</string>
+			<string>------------------------------------</string>
+			<string>8BC1FE1B-73CC-4E60-BDA2-F1DAA77F94DE</string>
+			<string>C853FD59-653A-4A21-ACF1-4E0E5D896BF0</string>
+    </array>
+  </dict>
 	<key>uuid</key>
 	<string>E756B007-7856-4660-BF32-294BE69ADBD0</string>
 </dict>
