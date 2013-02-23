@@ -13,6 +13,8 @@ Many thanks go to Hilton Lipschitz who contributed to this bundle, adding very c
 *   Substitution `{~~ ~> ~~}` (⇧⌘S)
 *   Comment `{>> <<}` (⌘/)
 *   Highlight `{== ==}{>> <<}` (⇧⌘H)
+*   Accept all marks (⌃⌥⌘A)
+*   Reject all marks (⌃⌥⌘R)
 
 ## Sample file
 
