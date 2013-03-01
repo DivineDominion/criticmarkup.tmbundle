@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Symbol List: Addition</string>
+	<key>scope</key>
+	<string>string.addition</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<integer>1</integer>
+		<key>symbolTransformation</key>
+		<string>
+		s/\{\+\+\s*(.*?)\s*\+\+\}/ + $1/g
+	</string>
+	</dict>
+	<key>uuid</key>
+	<string>3543B2AD-A69E-4A75-BDFE-47C02C8650FD</string>
+</dict>
+</plist>
