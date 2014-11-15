@@ -38,7 +38,7 @@ end
 	<key>outputLocation</key>
 	<string>replaceInput</string>
 	<key>scope</key>
-	<string>text.html.markdown -meta.disable-markdown</string>
+	<string>meta.paragraph.markdown, text.html.markdown -meta.disable-markdown</string>
 	<key>uuid</key>
 	<string>50AE2294-02C1-4040-81D4-722DC0111905</string>
 	<key>version</key>

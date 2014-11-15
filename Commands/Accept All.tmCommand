@@ -28,7 +28,7 @@ AcceptCritic.new().accept_all(ENV['TM_FILEPATH'])
 	<key>outputLocation</key>
 	<string>replaceDocument</string>
 	<key>scope</key>
-	<string>text.html.markdown -meta.disable-markdown</string>
+	<string>meta.paragraph.markdown, text.html.markdown -meta.disable-markdown</string>
 	<key>uuid</key>
 	<string>8BC1FE1B-73CC-4E60-BDA2-F1DAA77F94DE</string>
 	<key>version</key>
