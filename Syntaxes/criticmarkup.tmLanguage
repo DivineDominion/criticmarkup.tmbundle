@@ -6,6 +6,8 @@
 	<array>
 		<string>critic</string>
 	</array>
+	<key>injectionSelector</key>
+	<string>L: text, source</string>
 	<key>keyEquivalent</key>
 	<string>^~C</string>
 	<key>name</key>
@@ -13,61 +15,48 @@
 	<key>patterns</key>
 	<array>
 		<dict>
-			<key>include</key>
-			<string>text.html.markdown</string>
+			<key>comment</key>
+			<string>Editorial Substitution</string>
+			<key>match</key>
+			<string>\{~~(.*?)~~\}</string>
+			<key>name</key>
+			<string>string.substitution</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Editorial Addition</string>
+			<key>match</key>
+			<string>\{\+\+(.*?)\+\+[ \t]*(\[(.*?)\])?[ \t]*\}</string>
+			<key>name</key>
+			<string>string.addition</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Editorial Deletion</string>
+			<key>match</key>
+			<string>\{--(.*?)--[ \t]*(\[(.*?)\])?[ \t]*\}</string>
+			<key>name</key>
+			<string>string.deletion</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Editorial Highlight</string>
+			<key>match</key>
+			<string>\{\=\=(.*?)[ \t]*(\[(.*?)\])?[ \t]*\=\=\}</string>
+			<key>name</key>
+			<string>string.highlight</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Editorial Mark</string>
+			<key>match</key>
+			<string>\{&gt;&gt;(.*?)&lt;&lt;\}</string>
+			<key>name</key>
+			<string>string.comment</string>
 		</dict>
 	</array>
-	<key>injections</key>
-	<dict>
-		<key>text.html.markdown.critic</key>
-		<dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>comment</key>
-					<string>Editorial Substitution</string>
-					<key>match</key>
-					<string>\{~~(.*?)~~\}</string>
-					<key>name</key>
-					<string>string.substitution</string>
-				</dict>
-				<dict>
-					<key>comment</key>
-					<string>Editorial Addition</string>
-					<key>match</key>
-					<string>\{\+\+(.*?)\+\+[ \t]*(\[(.*?)\])?[ \t]*\}</string>
-					<key>name</key>
-					<string>string.addition</string>
-				</dict>
-				<dict>
-					<key>comment</key>
-					<string>Editorial Deletion</string>
-					<key>match</key>
-					<string>\{--(.*?)--[ \t]*(\[(.*?)\])?[ \t]*\}</string>
-					<key>name</key>
-					<string>string.deletion</string>
-				</dict>
-				<dict>
-					<key>comment</key>
-					<string>Editorial Highlight</string>
-					<key>match</key>
-					<string>\{\=\=(.*?)[ \t]*(\[(.*?)\])?[ \t]*\=\=\}</string>
-					<key>name</key>
-					<string>string.highlight</string>
-				</dict>
-				<dict>
-					<key>comment</key>
-					<string>Editorial Mark</string>
-					<key>match</key>
-					<string>\{&gt;&gt;(.*?)&lt;&lt;\}</string>
-					<key>name</key>
-					<string>string.comment</string>
-				</dict>
-			</array>
-		</dict>
-	</dict>
 	<key>scopeName</key>
-	<string>text.html.markdown.critic</string>
+	<string>text.critic</string>
 	<key>uuid</key>
 	<string>2a1dd069-4748-4825-bf5f-0bb7d2db26dd</string>
 </dict>
