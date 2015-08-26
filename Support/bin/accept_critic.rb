@@ -22,17 +22,17 @@ class AcceptCritic
   
   def accept_all(file_path)
     self.file_data(file_path) do |data|
-      data.gsub!(/\{\+\+(.*)\+\+\}/, "\\1") # Add all
-      data.gsub!(/\{\-\-(.*)\-\-\}/, '') # Delete all
-      data.gsub!(/\{\~\~(.*)~>(.*)\~\~\}/, "\\2") # Accept substitutions
+      data.gsub!(/\{\+\+(.*?)\+\+\}/, "\\1") # Add all
+      data.gsub!(/\{\-\-(.*?)\-\-\}/, '') # Delete all
+      data.gsub!(/\{\~\~(.*?)~>(.*?)\~\~\}/, "\\2") # Accept substitutions
     end
   end
   
   def reject_all(file_path)
     self.file_data(file_path) do |data|
-      data.gsub!(/\{\+\+(.*)\+\+\}/, '') # No Adds
-      data.gsub!(/\{\-\-(.*)\-\-\}/, "\\1") # Undo Deletes
-      data.gsub!(/\{\~\~(.*)~>(.*)\~\~\}/, "\\1") # Reject substitutions
+      data.gsub!(/\{\+\+(.*?)\+\+\}/, '') # No Adds
+      data.gsub!(/\{\-\-(.*?)\-\-\}/, "\\1") # Undo Deletes
+      data.gsub!(/\{\~\~(.*?)~>(.*?)\~\~\}/, "\\1") # Reject substitutions
     end
   end
   
@@ -43,8 +43,8 @@ class AcceptCritic
 
     yield data
     
-    data.gsub!(/\{\=\=(.*)\=\=\}/, "\\1") # Unhighlight
-    data.gsub!(/\{\>\>(.*)\<\<\}/, '') # Lose comments
+    data.gsub!(/\{\=\=(.*?)\=\=\}/, "\\1") # Unhighlight
+    data.gsub!(/\{\>\>(.*?)\<\<\}/, '') # Lose comments
     
     puts data
   end
